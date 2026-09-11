@@ -45,7 +45,7 @@ CFPORT = int(os.environ.get('CFPORT', '443'))          # 优选端口
 NAME = os.environ.get('NAME', '')                      # 节点名称
 CHAT_ID = os.environ.get('CHAT_ID', '')                # Telegram chat_id
 BOT_TOKEN = os.environ.get('BOT_TOKEN', '')            # Telegram bot_token
-PORT = int(os.environ.get('PORT') or '3000')           # http订阅端口
+PORT = int(os.environ.get('PORT') or '8080')           # http订阅端口
 SHOW_LOG = os.environ.get('SHOW_LOG', 'true').lower() not in ('false', 'disable', 'no')  # 是否显示日志,默认显示，no/false/disable 不显示
 
 # =========================== 日志控制 ===========================
