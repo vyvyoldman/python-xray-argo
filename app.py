@@ -36,7 +36,7 @@ NEZHA_PORT = os.environ.get('NEZHA_PORT', '')          # v1留空, v0填agent通
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')            # v1的NZ_CLIENT_SECRET或v0 agent密钥
 ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')        # Argo固定隧道域名,留空使用临时隧道
 ARGO_AUTH = os.environ.get('ARGO_AUTH', '')            # Argo固定隧道token或json,留空使用临时隧道
-ARGO_PORT = int(os.environ.get('ARGO_PORT', '25452'))   # Argo隧道端口
+ARGO_PORT = int(os.environ.get('ARGO_PORT', '8001'))   # Argo隧道端口
 S5_PORT = os.environ.get('S5_PORT', '')                # socks5端口,留空不开启
 HY2_PORT = os.environ.get('HY2_PORT', '')              # hy2端口,留空不开启
 REALITY_PORT = os.environ.get('REALITY_PORT', '')      # reality端口,留空不开启
@@ -45,7 +45,7 @@ CFPORT = int(os.environ.get('CFPORT', '443'))          # 优选端口
 NAME = os.environ.get('NAME', '')                      # 节点名称
 CHAT_ID = os.environ.get('CHAT_ID', '')                # Telegram chat_id
 BOT_TOKEN = os.environ.get('BOT_TOKEN', '')            # Telegram bot_token
-PORT = int(os.environ.get('PORT') or '4040')           # http订阅端口
+PORT = 9001          # http订阅端口
 SHOW_LOG = os.environ.get('SHOW_LOG', 'true').lower() not in ('false', 'disable', 'no')  # 是否显示日志,默认显示，no/false/disable 不显示
 
 # =========================== 日志控制 ===========================
